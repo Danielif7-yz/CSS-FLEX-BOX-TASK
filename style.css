@@ -1,0 +1,66 @@
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+                                
+                                body {
+                                    background-color: #f0f0f0;
+                                }
+                                /* NOTE// Flex-box is used for positioning */
+                                
+                                main {
+                                    width: 50%;
+                                    margin: auto;
+                                    /* This sets your element to the center of the page. it creates a space only at the right-hand side and at the left-hand side. the top has no space at all. Except you style by using Margin: 5px Or 20px; etc. */
+                                    display: flex;
+                                    /*Flex by default, its direction is horizontal, so u can change its direction*/
+                                    /*This code flexes the container by shifting the second container(div) to the right, thereby making it lie side by side with the first container. IT PICKS ONLY THE FIRST TWO CONTAINERS */
+                                    justify-content: center;
+                                    /*Centers things on the vertical */
+                                    /* align-items: center; */
+                                    height: 100vh;
+                                    /*WHy did we use 100vh ??   This is Relative to the height and width of the web page. Vh  means Relative to View Port.*/
+                                    flex-direction: column;
+                                    /* This makes our container ie  the one containing the MONTHLY SUBSCRIPTION and the WHY US to come down and seat below the first Div containing JOIN OUR COMMUNITY */
+                                }
+                                
+                                .top-content {
+                                    background-color: white;
+                                    padding: 2em;
+                                    /*Padding is th space inside the conatiner*/
+                                    width: 100%;
+                                }
+                                
+                                .top-content h3 {
+                                    color: rgb(65, 203, 228);
+                                    font-size: 20px;
+                                    padding-bottom: 10px;
+                                    font-size: bold;
+                                }
+                                
+                                .top-content .p-top {
+                                    font-weight: bold;
+                                    color: rgb(163, 204, 51);
+                                    font-size: 15px;
+                                    padding-bottom: 10px;
+                                }
+                                
+                                .bottom-content {
+                                    display: flex;
+                                    /* We used DISPLAY:FLEX; because by default, flex goes the horizontal direction */
+                                    width: 100%;
+                                }
+                                /* This code makes or flexes the 2 containers under the first one, to lie side by side ie asin a row */
+                                
+                                .bottom-content .top-bottom {
+                                    background-color: rgb(25, 190, 190);
+                                    padding: 2em;
+                                    width: 50%;
+                                }
+                                
+                                .bottom-content .second-bottom {
+                                    background-color: rgb(145, 233, 233);
+                                    padding: 2em;
+                                    width: 50%;
+                                }
